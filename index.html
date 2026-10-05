@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Festival Et Maintenant</title>
+<meta name="description" content="Découvre le festival sur ARTE Boutique et installe l'app ARTE.">
+<meta name="theme-color" content="#10222b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎬%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+/* ===== À PERSONNALISER : couleurs et forme des boutons ===== */
+:root{
+  --fond:#10222b;        /* couleur de fond */
+  --texte:#ffffff;       /* couleur du texte */
+  --bouton:#ffffff;      /* fond des boutons */
+  --bouton-texte:#10222b;/* texte des boutons */
+  --rayon:99px;          /* 6px = carré, 14px = arrondi, 99px = pilule */
+}
+/* ========================================================== */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  background:var(--fond);color:var(--texte);
+  font:400 16px/1.5 "Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  display:flex;justify-content:center;
+  padding:calc(40px + env(safe-area-inset-top,0px)) 20px calc(32px + env(safe-area-inset-bottom,0px));
+}
+main{width:100%;max-width:420px;text-align:center}
+.logo{width:84px;height:84px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;
+  background:var(--bouton);color:var(--bouton-texte);font-weight:800;font-size:1.7rem}
+h1{margin:0;font-size:1.5rem;font-weight:800;letter-spacing:-.02em}
+p{margin:6px 0 26px;opacity:.85}
+a.lien{display:block;margin-bottom:12px;padding:14px 18px;border-radius:var(--rayon);
+  background:var(--bouton);color:var(--bouton-texte);text-decoration:none;font-weight:600}
+a.lien:hover{filter:brightness(.93)}
+a.lien:focus-visible{outline:3px solid var(--texte);outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+  <div class="logo" aria-hidden="true">EM</div>
+  <h1>Festival Et Maintenant</h1>
+  <p>Découvre le festival et installe l'app ARTE.</p>
+
+  <!-- ===== À PERSONNALISER : tes liens (copie/colle une ligne <a> pour en ajouter) ===== -->
+  <a class="lien" href="https://boutique.arte.tv/detail/festival-et-maintenant?utm_source=affiche_EMF&utm_medium=QRCode&utm_campaign=install_0926">Découvrir sur ARTE Boutique</a>
+  <a class="lien" href="https://arte.app.link/L0EShorbZ6b">Télécharger l'app ARTE</a>
+  <!-- ================================================================================= -->
+</main>
+</body>
+</html>
