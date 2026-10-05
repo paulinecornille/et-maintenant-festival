@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>La VOD pour continuer "Et maintenant ?" dans votre canapé !</title>
-<meta name="description" content="La VOD pour continuer "Et maintenant ?" dans votre canapé !">
-<meta name="theme-color" content="#10222b">
+<title>La VOD pour continuer &quot;Et maintenant ?&quot; dans votre canapé !</title>
+<meta name="description" content="La VOD pour continuer &quot;Et maintenant ?&quot; dans votre canapé !">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎬%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
@@ -28,24 +28,25 @@ body{
 }
 main{width:100%;max-width:420px;text-align:center}
 .logo{width:84px;height:84px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;
-  background:var(--bouton);color:var(--bouton-texte);font-weight:800;font-size:1.7rem}
-h1{margin:0;font-size:1.5rem;font-weight:800;letter-spacing:-.02em}
-p{margin:6px 0 26px;opacity:.85}
+  background:var(--orange);color:var(--fond);font-weight:800;font-size:1.7rem}
+h1{margin:0;font-size:1.5rem;font-weight:800;letter-spacing:-.02em;color:var(--orange)}
+p{margin:6px 0 26px;color:var(--texte)}
 a.lien{display:block;margin-bottom:12px;padding:14px 18px;border-radius:var(--rayon);
-  background:var(--bouton);color:var(--bouton-texte);text-decoration:none;font-weight:600}
-a.lien:hover{filter:brightness(.93)}
+  background:transparent;color:var(--texte);border:2px solid var(--orange);
+  text-decoration:none;font-weight:600;transition:background .15s,color .15s}
+a.lien:hover{background:var(--orange);color:var(--fond)}
 a.lien:focus-visible{outline:3px solid var(--texte);outline-offset:3px}
 </style>
 </head>
 <body>
 <main>
   <div class="logo" aria-hidden="true">EM</div>
-  <h1>La VOD pour continuer "Et maintenant ?" dans votre canapé !</h1>
-  <p></p>
+  <h1>La VOD pour continuer &quot;Et maintenant ?&quot; dans votre canapé !</h1>
+  <p>Notre sélection Et maintenant ? disponible sur le site et l'app Arte VOD.</p>
 
   <!-- ===== À PERSONNALISER : tes liens (copie/colle une ligne <a> pour en ajouter) ===== -->
   <a class="lien" href="https://boutique.arte.tv/detail/festival-et-maintenant?utm_source=affiche_EMF&utm_medium=QRCode&utm_campaign=install_0926">Découvrir la sélection Et Maintenant ? sur ARTE VOD</a>
-  <a class="lien" href="https://arte.app.link/L0EShorbZ6b">Télécharge l'app Arte VOD ! </a>
+  <a class="lien" href="https://arte.app.link/L0EShorbZ6b">Télécharge l'app Arte VOD !</a>
   <!-- ================================================================================= -->
 </main>
 </body>
